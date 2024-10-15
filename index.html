@@ -2,32 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Open Android Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
     <style>
         body {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
         }
-        .button {
+
+        h1 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
             padding: 15px 25px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007BFF;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff; /* Blue color */
             border: none;
             border-radius: 5px;
-            cursor: pointer;
             text-decoration: none;
+            cursor: pointer;
         }
-        .button:hover {
-            background-color: #0056b3;
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue when hovered */
+        }
+
+        .btn-red {
+            background-color: #dc3545; /* Red color */
+        }
+
+        .btn-red:hover {
+            background-color: #c82333; /* Darker red when hovered */
+        }
+
+        .btn-green {
+            background-color: #28a745; /* Green color */
+        }
+
+        .btn-green:hover {
+            background-color: #218838; /* Darker green when hovered */
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <a href="intent://com.android.settings/#Intent;scheme=android-app;end" class="button">Open Settings</a>
+
+    <!-- Greeting Message -->
+    <h1>Welcome to my GitHub Page!</h1>
+    <p>Click one of the buttons below to open specific settings on your Android device.</p>
+
+    <!-- Buttons with different intent links -->
+    <a class="btn" href="intent://com.android.settings/#Intent;scheme=android-app;end">Open Settings</a>
+    <a class="btn btn-red" href="intent://com.android.settings.bluetooth/#Intent;scheme=android-app;end">Open Bluetooth Settings</a>
+    <a class="btn btn-green" href="intent://com.android.settings.wifi/#Intent;scheme=android-app;end">Open Wi-Fi Settings</a>
+
+    <!-- Footer Message -->
+    <footer>
+        <p>Thank you for visiting! You can check more intents or links soon.</p>
+    </footer>
+
 </body>
 </html>
